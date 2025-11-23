@@ -402,6 +402,9 @@
 #define ABILITY_TRAINED_MIND 366 //scrappy but psychic v dark
 #define ABILITY_SNOW_STALKER 367  //solar power for snow
 #define ABILITY_SANDY_SOUL 368   //protosynthesis with sand
+//paradox abilities for snow and sand
+//paradox abilities for psychic and misty terrains
+//legendary paradox abilities for above
 //royal coat aka shield dust for pyroar
 //remember to build the description doc for 328+
 

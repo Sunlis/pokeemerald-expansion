@@ -194,7 +194,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_WONDER_GUARD] =
     {
         .name = _("Wonder Guard"),
-        .description = COMPOUND_STRING("“Supereffective” hits."),
+        .description = COMPOUND_STRING("Only “Supereffective” hits."),
         .aiRating = 10,
         .cantBeCopied = TRUE,
         .cantBeSwapped = TRUE,
@@ -2176,7 +2176,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_GOOD_AS_GOLD] =
     {
         .name = _("Good as Gold"),
-        .description = COMPOUND_STRING("Avoids status problems."),
+        .description = COMPOUND_STRING("Avoids status moves."),
         .aiRating = 8,
         .breakable = TRUE,
     },
@@ -2586,7 +2586,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_RESOLVE] =
     {
         .name = _("Resolve"),
-        .description = COMPOUND_STRING("Sets Misty on entry."),
+        .description = COMPOUND_STRING("Sets Mist on entry."),
         .aiRating = 5,
     },
     // [ABILITY_THICK_STEAM] =

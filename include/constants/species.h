@@ -1214,15 +1214,15 @@
 #define SPECIES_FLORGES_ORANGE                          1143
 #define SPECIES_FLORGES_BLUE                            1144
 #define SPECIES_FLORGES_WHITE                           1145
-#define SPECIES_FURFROU_HEART_TRIM                      1146
-#define SPECIES_FURFROU_STAR_TRIM                       1147
-#define SPECIES_FURFROU_DIAMOND_TRIM                    1148
-#define SPECIES_FURFROU_DEBUTANTE_TRIM                  1149
-#define SPECIES_FURFROU_MATRON_TRIM                     1150
-#define SPECIES_FURFROU_DANDY_TRIM                      1151
-#define SPECIES_FURFROU_LA_REINE_TRIM                   1152
-#define SPECIES_FURFROU_KABUKI_TRIM                     1153
-#define SPECIES_FURFROU_PHARAOH_TRIM                    1154
+#define SPECIES_FURFROU_HEART                           1146
+#define SPECIES_FURFROU_STAR                            1147
+#define SPECIES_FURFROU_DIAMOND                         1148
+#define SPECIES_FURFROU_DEBUTANTE                       1149
+#define SPECIES_FURFROU_MATRON                          1150
+#define SPECIES_FURFROU_DANDY                           1151
+#define SPECIES_FURFROU_LA_REINE                        1152
+#define SPECIES_FURFROU_KABUKI                          1153
+#define SPECIES_FURFROU_PHARAOH                         1154
 #define SPECIES_MEOWSTIC_F                              1155
 #define SPECIES_AEGISLASH_BLADE                         1156
 #define SPECIES_PUMPKABOO_SMALL                         1157
@@ -1682,7 +1682,34 @@
 #define SPECIES_TROPIUS_MEGA                            1565
 #define SPECIES_LUGIA_PRIMAL                            1566
 #define SPECIES_HO_OH_PRIMAL                            1567
-#define SPECIES_EGG                                     (SPECIES_HO_OH_PRIMAL + 1)
+#define SPECIES_ARCANINE_HISUI_MEGA                     1568
+#define SPECIES_NOCTOWL_MEGA_X                          1567
+#define SPECIES_NOCTOWL_MEGA_Y                          1568
+#define SPECIES_LEDIAN_MEGA                             1569
+#define SPECIES_MISMAGIUS_MEGA                          1570
+#define SPECIES_CORSOLA_MEGA                            1571
+#define SPECIES_TORKOAL_MEGA                            1572
+#define SPECIES_STARAPTOR_MEGA                          1573
+#define SPECIES_LIEPARD_MEGA                            1574
+#define SPECIES_SCRAFTY_MEGA_Y                          1575
+#define SPECIES_BARBARACLE_MEGA_Y                       1576
+#define SPECIES_FALINKS_MEGA_Y                          1577
+#define SPECIES_MEGANIUM_MEGA                           1578
+#define SPECIES_EMBOAR_MEGA                             1579
+#define SPECIES_VICTREEBEL_MEGA                         1580
+#define SPECIES_MALAMAR_MEGA                            1581
+#define SPECIES_
+#define SPECIES_
+#define SPECIES_
+#define SPECIES_
+#define SPECIES_
+#define SPECIES_
+#define SPECIES_
+#define SPECIES_
+#define SPECIES_
+#define SPECIES_CASTFORM_SANDY                          1591
+
+#define SPECIES_EGG                                     (SPECIES_FALINKS_MEGA_Y + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

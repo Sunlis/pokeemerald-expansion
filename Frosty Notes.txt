@@ -1,49 +1,6 @@
 https://rh-hideout.github.io/pokeemerald-expansion/tutorials/
 plans for june patch
 
-POISON CHANGES
-Heal Pulse - 17203 battlescriptcommands.c
-BattleScript_EffectRestoreHp- 3382 battle_scripts_1.s
-Conditional healing 4510 battle_scripts_1.s
-Absorb - 6011 battle_script_commands.c
-Leech seed- 3938 battle_scripts_1.s
-Aqua ring - 2713 battle_scripts.1s
-Wish - 5168 battle_scripts_1.s
-
-Ingrain
-Pain Split?
-Dream Eater?
-Strength Sap
-Life Dew/Jungle healing
-Swallow
-Moonlight/Morning sun
-Rest
-Purify
-Roost
-Softboiled
-Cheek Pouch
-Hospitality
-Poison heal
-Regenerator
-Icebody/rain dish/etc
-Water Absorb/earth eater/volt absorb etc
-Pleasant dreams when finished
-Leftovers, big root, liquid ooze etc
-Healing items? (Full Restore, Hyper Potion, Max Potion, Potion, Super Potion, energy powder/root, Fine Remedy, Fresh water, Lemonade, Max Honey, Moomoo milk,
-Rage Candy Bar, Remedy, Sacred Ash, Soda Pop, Superb Remedy, Sweet Heart)
-Berries? (Aguav, Enigma, Figy, Gold, Iapapa, Mago, Oran, Sitrus, Wiki)
-Shell Bell
-Berry Juice
-Grassy Terrain
-Healing wish/Lunar Dance
-
-
-healing list
-https://pokemondb.net/pokebase/346278/what-are-all-of-the-healing-moves-up-to-gen-8
-
-
-
-
 Abilities	60
 Moves		183
 Items		26
@@ -65,32 +22,22 @@ Stealth Rock nerf
 
 July Update!
 -update engine to current version
--finish gen 7 balance
--Change defeatest to 30% hp
 -Make steelspikes act like sticky web instead of doing damage and lower def
--test poison halving all sources of healing
--add battle background pallettes
--Gen 8 balance
 -add first three extra challenge NPCs (https://github.com/pret/pokeemerald/wiki/Adding-a-New-Trainer-Class)
-
--adjust hold hands to be reverse helping hand
--Add abilities from discord
--Vigilance- switching in this mon takes 2/3 damage on first turn in (does this count turn 1?)
--finish uncompleted moves/abilities/items
--finish balance changes in discord notes
--potentially add backgrounds specifically for battle effects such as trick room, weather, terrain, etc
 -rebalance glacial tempest and snowsear storm compared to blizzard
 
 
 August Update
--look into fishing mini game addition
 -add first gamba NPC (Rustboro after gym beat)
-
 Tripwire- sets a tripwire on the enemy side of field. Next mon that switches in takes 25% damage and consumes the hazard there
 Bottomfeeder- eats any hazards on side of field. if successful heal for 33% hp
--work on pokeballs and finish the hard berries
 -rework sport, safari and lure/dive balls to be more interesting
 -look into adding new trainers into elite 4 and the randomization process
+-Add abilities from discord
+-Vigilance- switching in this mon takes 2/3 damage on first turn in (does this count turn 1?)
+-finish balance changes in discord notes
+-adjust hold hands to be reverse helping hand
+-add battle background pallettes/UI elements that allow more information
 
 September
 -look into editing items on maps so player can access and find mega stones in game
@@ -99,6 +46,7 @@ September
 -edit gym trainers and ace trainer teams
 -look into gift npc's and potential trade npc changes
 -look into gacha npc for eggs
+-look into fishing mini game addition
 
 October
 -add in new updated story with new encounters such as team up battles etc
