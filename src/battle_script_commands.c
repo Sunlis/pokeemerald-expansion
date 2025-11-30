@@ -4456,44 +4456,44 @@ void SetMoveEffect(bool32 primary, bool32 certain)
             gBattlescriptCurrInstr = BattleScript_EffectRecycleBerriesAllies;
         }
         break;
-    case MOVE_EFFECT_REMOVE_STATUS:
-    {
-        u32 argStatus = GetMoveEffectArg_Status(gCurrentMove);
-        if ((gBattleMons[gEffectBattler].status1 & argStatus)
-         && (NumAffectedSpreadMoveTargets() > 1 || !IsMoveEffectBlockedByTarget(GetBattlerAbility(gEffectBattler))))
-        {
-            gBattleMons[gEffectBattler].status1 &= ~(argStatus);
-            BtlController_EmitSetMonData(gEffectBattler, 0, REQUEST_STATUS_BATTLE, 0, 4, &gBattleMons[gEffectBattler].status1);
-            MarkBattlerForControllerExec(gEffectBattler);
-            BattleScriptPush(gBattlescriptCurrInstr + 1);
+    // case MOVE_EFFECT_REMOVE_STATUS:
+    // {
+    //     u32 argStatus = GetMoveEffectArg_Status(gCurrentMove);
+    //     if ((gBattleMons[gEffectBattler].status1 & argStatus)
+    //      && (NumAffectedSpreadMoveTargets() > 1 || !IsMoveEffectBlockedByTarget(GetBattlerAbility(gEffectBattler))))
+    //     {
+    //         gBattleMons[gEffectBattler].status1 &= ~(argStatus);
+    //         BtlController_EmitSetMonData(gEffectBattler, 0, REQUEST_STATUS_BATTLE, 0, 4, &gBattleMons[gEffectBattler].status1);
+    //         MarkBattlerForControllerExec(gEffectBattler);
+    //         BattleScriptPush(gBattlescriptCurrInstr + 1);
 
-            switch (argStatus)
-            {
-            case STATUS1_PARALYSIS:
-                gBattlescriptCurrInstr = BattleScript_TargetPRLZHeal;
-                break;
-            // case STATUS1_SLEEP:
-            //     TryDeactivateSleepClause(GetBattlerSide(gEffectBattler), gBattlerPartyIndexes[gBattlerTarget]);
-            //     gBattlescriptCurrInstr = BattleScript_TargetWokeUp;
-            //     break;
-            case STATUS1_BURN:
-                gBattlescriptCurrInstr = BattleScript_TargetBurnHeal;
-                break;
-            case STATUS1_FREEZE:
-                gBattlescriptCurrInstr = BattleScript_DefrostedViaFireMove;
-                break;
-            case STATUS1_FROSTBITE:
-                gBattlescriptCurrInstr = BattleScript_FrostbiteHealedViaFireMove;
-                break;
-            case STATUS1_POISON:
-            case STATUS1_TOXIC_POISON:
-            case STATUS1_PSN_ANY:
-                gBattlescriptCurrInstr = BattleScript_TargetPoisonHealed;
-                break;
-            }
-        }
-        break;
-        }
+    //         switch (argStatus)
+    //         {
+    //         case STATUS1_PARALYSIS:
+    //             gBattlescriptCurrInstr = BattleScript_TargetPRLZHeal;
+    //             break;
+    //         // case STATUS1_SLEEP:
+    //         //     TryDeactivateSleepClause(GetBattlerSide(gEffectBattler), gBattlerPartyIndexes[gBattlerTarget]);
+    //         //     gBattlescriptCurrInstr = BattleScript_TargetWokeUp;
+    //         //     break;
+    //         case STATUS1_BURN:
+    //             gBattlescriptCurrInstr = BattleScript_TargetBurnHeal;
+    //             break;
+    //         case STATUS1_FREEZE:
+    //             gBattlescriptCurrInstr = BattleScript_DefrostedViaFireMove;
+    //             break;
+    //         case STATUS1_FROSTBITE:
+    //             gBattlescriptCurrInstr = BattleScript_FrostbiteHealedViaFireMove;
+    //             break;
+    //         case STATUS1_POISON:
+    //         case STATUS1_TOXIC_POISON:
+    //         case STATUS1_PSN_ANY:
+    //             gBattlescriptCurrInstr = BattleScript_TargetPoisonHealed;
+    //             break;
+    //         }
+    //     }
+    //     break;
+    //     }
         }
 
     
