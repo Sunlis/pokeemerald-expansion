@@ -10242,7 +10242,7 @@ BattleScript_EffectParalyzeSide::
 	copybyte sBATTLER, gBattlerTarget
 BattleScript_ParalyzeSideLoop:
 	jumpifabsent BS_TARGET, BattleScript_ParalyzeSideIncrement
-	trysetparalysis BattleScript_ParalyzeSideIncrement
+#	trysetparalysis BattleScript_ParalyzeSideIncrement
 BattleScript_ParalyzeSideIncrement:
 	jumpifbytenotequal gBattlerTarget, sBATTLER, BattleScript_ParalyzeSideEnd
 	setallytonexttarget BattleScript_ParalyzeSideLoop
@@ -10255,7 +10255,7 @@ BattleScript_EffectPoisonSide::
 	copybyte sBATTLER, gBattlerTarget
 BattleScript_PoisonSideLoop:
 	jumpifabsent BS_TARGET, BattleScript_PoisonSideIncrement
-	trysetpoison BattleScript_PoisonSideIncrement
+#	trysetpoison BattleScript_PoisonSideIncrement
 BattleScript_PoisonSideIncrement:
 	jumpifbytenotequal gBattlerTarget, sBATTLER, BattleScript_PoisonSideEnd
 	setallytonexttarget BattleScript_PoisonSideLoop
@@ -10268,7 +10268,7 @@ BattleScript_EffectPoisonParalyzeSide::
 	copybyte sBATTLER, gBattlerTarget
 BattleScript_PoisonParalyzeSideLoop:
 	jumpifabsent BS_TARGET, BattleScript_PoisonParalyzeSideIncrement
-	trysetpoisonparalysis BattleScript_PoisonParalyzeSideIncrement
+#	trysetpoisonparalysis BattleScript_PoisonParalyzeSideIncrement
 BattleScript_PoisonParalyzeSideIncrement:
 	jumpifbytenotequal gBattlerTarget, sBATTLER, BattleScript_PoisonParalyzeSideEnd
 	setallytonexttarget BattleScript_PoisonParalyzeSideLoop
@@ -10281,7 +10281,7 @@ BattleScript_EffectEffectSporeSide::
 	copybyte sBATTLER, gBattlerTarget
 BattleScript_EffectSporeSideLoop:
 	jumpifabsent BS_TARGET, BattleScript_EffectSporeSideIncrement
-	tryseteffectspore BattleScript_EffectSporeSideIncrement
+#	tryseteffectspore BattleScript_EffectSporeSideIncrement
 BattleScript_EffectSporeSideIncrement:
 	jumpifbytenotequal gBattlerTarget, sBATTLER, BattleScript_EffectSporeSideEnd
 	setallytonexttarget BattleScript_EffectSporeSideLoop
@@ -10294,8 +10294,8 @@ BattleScript_EffectConfuseSide::
 	copybyte sBATTLER, gBattlerTarget
 BattleScript_ConfuseSideLoop:
 	jumpifabsent BS_TARGET, BattleScript_ConfuseSideIncrement
-	trysetconfusion BattleScript_ConfuseSideIncrement
-	volatileanimation BS_EFFECT_BATTLER, VOLATILE_CONFUSION
+#	trysetconfusion BattleScript_ConfuseSideIncrement
+#	volatileanimation BS_EFFECT_BATTLER, VOLATILE_CONFUSION
 BattleScript_ConfuseSidePrintMessage:
 	printstring STRINGID_PKMNWASCONFUSED
 	waitmessage B_WAIT_TIME_LONG
@@ -10312,8 +10312,8 @@ BattleScript_EffectInfatuateSide::
 	copybyte sBATTLER, gBattlerTarget
 BattleScript_InfatuateSideLoop:
 	jumpifabsent BS_TARGET, BattleScript_InfatuateSideIncrement
-	trysetinfatuation BattleScript_InfatuateSideIncrement
-	volatileanimation BS_EFFECT_BATTLER, VOLATILE_INFATUATION
+#	trysetinfatuation BattleScript_InfatuateSideIncrement
+#	volatileanimation BS_EFFECT_BATTLER, VOLATILE_INFATUATION
 BattleScript_InfatuateSidePrintMessage:
 	printstring STRINGID_PKMNFELLINLOVE
 	waitmessage B_WAIT_TIME_LONG
@@ -10329,7 +10329,7 @@ BattleScript_EffectTormentSide::
 	copybyte sBATTLER, gBattlerTarget
 BattleScript_TormentSideLoop:
 	jumpifabsent BS_TARGET, BattleScript_TormentSideIncrement
-	trysettorment BattleScript_TormentSideIncrement
+#	trysettorment BattleScript_TormentSideIncrement
 BattleScript_TormentSidePrintMessage:
 	printstring STRINGID_PKMNSUBJECTEDTOTORMENT
 	waitmessage B_WAIT_TIME_LONG
@@ -10350,7 +10350,7 @@ BattleScript_EffectMeanLookSide::
 	copybyte sBATTLER, gBattlerTarget
 BattleScript_MeanLookSideLoop:
 	jumpifabsent BS_TARGET, BattleScript_MeanLookSideIncrement
-	trysetescapeprevention BattleScript_MeanLookSideIncrement
+#	trysetescapeprevention BattleScript_MeanLookSideIncrement
 BattleScript_MeanLookSidePrintMessage:
 	printstring STRINGID_TARGETCANTESCAPENOW
 	waitmessage B_WAIT_TIME_LONG
@@ -10410,11 +10410,6 @@ BattleScript_DoInfatuationAnim:
 BattleScript_PrintCoinsScattered:
 	printstring STRINGID_COINSSCATTERED
 	goto BattleScript_MoveEnd
-
-BattleScript_TormentEnds::
-	printstring STRINGID_TORMENTEDNOMORE
-	waitmessage B_WAIT_TIME_LONG
-	end2
 
 BattleScript_EffectRaiseCritAlliesAnim::
 	savetarget
