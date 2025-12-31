@@ -446,8 +446,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .formChangeTable = sEmboarFormChangeTable,
     },
 
-    #if P_MEGA_EVOLUTIONS
-    #if FROSTY_MEGAS >= SPECIES_EMBOAR
+#if P_MEGA_EVOLUTIONS
+#if FROSTY_MEGAS >= SPECIES_EMBOAR
     [SPECIES_EMBOAR_MEGA] =
     {
         .baseHP        = 110,
@@ -511,9 +511,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .teachableLearnset = sEmboarTeachableLearnset,
         .formSpeciesIdTable = sEmboarFormSpeciesIdTable,
     },
-    #endif FROSTY_MEGAS >= SPECIES_EMBOAR
-#endif P_MEGA_EVOLUTIONS
-    },
+#endif //FROSTY_MEGAS >= SPECIES_EMBOAR
+#endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_TEPIG
 
 #if P_FAMILY_OSHAWOTT

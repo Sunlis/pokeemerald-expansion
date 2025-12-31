@@ -1210,7 +1210,7 @@ static const u16 sArceusFormSpeciesIdTable[] = {
 
 #if P_FAMILY_TEPIG
 static const u16 sEmboarFormSpeciesIdTable[] = {
-    SPECIES_EMBOAR
+    SPECIES_EMBOAR,
 #if P_MEGA_EVOLUTIONS
     SPECIES_EMBOAR_MEGA,
 #endif
